@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #1a0000);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid red;
+}
+
+.navbar h2 {
+    color: red;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+/* CENTER LAYOUT */
+.container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GLASS CARD STYLE (LOGIN LOOK) */
+.card, .success-box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid red;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    margin: 10px;
+}
+
+/* TITLES */
+h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: red;
+}
+
+/* INPUTS (LOGIN STYLE) */
+.input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input:focus {
+    border-color: red;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* CARDS (cart items) */
+.card {
+    width: 300px;
+}
+
+/* TOTAL TEXT */
+.total {
+    color: red;
+    font-size: 20px;
+    margin-top: 15px;
+}

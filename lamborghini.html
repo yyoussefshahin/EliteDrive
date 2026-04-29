@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Lamborghini - High-End Cars</title>
+
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(imgs/lamboback.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color:#ffffff;
+            
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+          .specs {
+            font-size: 0.95rem;
+            color: #fcfcfc;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-style: italic;
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Grid Section */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #1d1919;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #000000;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: red; /* Lamborghini Yellow */
+            color: #fdfbfb;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<header class="hero">
+<img alt="Lamborghini Hero Image" src="imgs/lambotop.jpg"/>
+<div class="hero-content">
+<h1>Lamborghini High-End Cars</h1>
+</div>
+</header>
+
+<main class="container">
+<!-- Car 1 -->
+<div class="card">
+<img alt="Lamborghini Huracán EVO" src="https://www.evoindia.com/evoindia/2022-08/519b77e1-574e-4d86-9dd2-38ff5bfa9052/1.jpg"/>
+<div class="card-content">
+<div class="car-name">Lamborghini Huracán EVO</div>
+<div class="price">$270,000</div>
+<div class="specs">630 HP<br/>0-100  2.9s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 2 -->
+<div class="card">
+<img alt="Lamborghini Urus S" src="https://images8.alphacoders.com/127/1276317.jpg"/>
+<div class="card-content">
+<div class="car-name">Lamborghini Urus S</div>
+<div class="price">$233,000</div>
+<div class="specs">666 HP<br/>0-100  3.5s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 3 -->
+<div class="card">
+<img alt="Lamborghini Revuelto" src="https://doublemesh.com/wp-content/uploads/2023/10/2024-Lamborghini-Revuelto-Photo-Wallpaper.jpg"/>
+<div class="card-content">
+<div class="car-name">Lamborghini Revuelto</div>
+<div class="price">$608,000</div>
+<div class="specs">1001 HP<br/>0-100  2.5s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 4 -->
+<div class="card">
+<img alt="Lamborghini Huracán Sterrato" src="https://i.pinimg.com/736x/8b/39/3c/8b393cda23e3a89ee7266f0226651851.jpg"/>
+<div class="card-content">
+<div class="car-name">Lamborghini Huracán Sterrato</div>
+<div class="price">$279,000</div>
+<div class="specs">610 HP<br/>0-100  3.4s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 5 -->
+<div class="card">
+<img alt="lamborghini aventador svj" src="https://i.pinimg.com/736x/5b/24/06/5b24060ec4b66786040c8113e8828651.jpg"/>
+<div class="card-content">
+<div class="car-name">lamborghini aventador svj</div>
+<div class="price">$750,000</div>
+<div class="specs">770 HP<br/>0-100  2.8s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+</main>
+
+</body>
+
+</html>

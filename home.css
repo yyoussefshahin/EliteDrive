@@ -1,0 +1,69 @@
+.body {
+    margin: 0;
+    font-family: Arial;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE LAYER */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center center/cover;
+
+    filter: blur(8px);
+    transform: scale(1.1); 
+    z-index: -1;
+}
+
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITLE */
+.title {
+    font-size: 70px;
+    color: red;
+    text-shadow: 0 0 25px red;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* SUBTITLE */
+.subtitle {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* ENTER BUTTON */
+.btn {
+    padding: 15px 30px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}

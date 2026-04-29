@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Ferrari - High-End Cars</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(imgs/ferrari2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+       
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+          .specs {
+            font-size: 0.95rem;
+            color: #fcfcfc;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-style: italic;
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #483a3a;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e30613; 
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<header class="hero">
+<img alt="Ferrari Hero Image" src="imgs/ferrari1.jpg"/>
+<div class="hero-content">
+<h1>Ferrari High-End Cars</h1>
+</div>
+</header>
+
+<main class="container">
+<!-- Car 1 -->
+<div class="card">
+<img alt="Ferrari 488 GTB" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFfszUXPIK1cQyEhAaJE3OY0Ly0a5e-Q6S1tN4wg_hF2tDgaHFn8PIfDgmiH0DddNoi0qWxFHL_jgdflZmdN6acRT3kDOp9o08VOTdB6tN2dJQ7NMiGSmdrBjKh8Vc8C0v4hRQ30TiSWHQwJM0xDWLRnzXUtRB6JPMWIZxvGHsh1gk6o7v4tpzQzaxU-0EK2HtABnb0rDAzROzY8V9OzlE9Mh-HVImhRvfq8m17fYTC4sXVF1K25T_2PLQssQqDOx75cClh-8DLDk"/>
+<div class="card-content">
+<div class="car-name">Ferrari 488 GTB</div>
+<div class="price">$250,000</div>
+<div class="specs">670 HP<br/>0-100  3.0s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 2 -->
+<div class="card">
+<img alt="Ferrari F8 Tributo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtrd8L49QQzQ36cmU-cfuysnQKlAcdPT08xD0Oa2hVG4Z0rFW7hdZPD5_xm0hoJ8VtEVhS6Z5trqcH3y5UPgP0PBR-B4gje313BrAnAA2DMmEprfxZNXI4CtMypBSULxw3-YB2wYP6Hx5xm5zpqUGwDJ6ykMsLU4F0UYC83WktDlOL0mrryfHgnfRqFknrWhFyXhoPw_o6ObGTT_p9Nx-glD_ajydhDJVneF0YrFpEw1a4ShkGx-DdemnZB3AZz97mN8sVXjpMmxk"/>
+<div class="card-content">
+<div class="car-name">Ferrari F8 Tributo</div>
+<div class="price">$320,000</div>
+<div class="specs">720 HP<br/>0-100  2.9s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 3 -->
+<div class="card">
+<img alt="Ferrari SF90 Stradale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL2No7Yjts7cFi9O48r5XPRpCyo5jbH851_fOwZUGyU-3k-BUztiYsuWmkG4Y6cXK-pW1DTHIM0OQb6D9oVIkbgkDpMAI_1tuQ2aFfGjBdADqDFduC7xv8phV0db5iICaECO3W6H_zrIa3wSjJtoFesLBe4s_unvyXR-INNnNTV8iMayl4W4L5B74JklF2nqU0GzcgWPg5WMm7CzLwfGUTELXx6w-XCVImHkqPnM51mNOrDiM0dFlJZi80OQGDDnE0_JKWiQe2Vvo"/>
+<div class="card-content">
+<div class="car-name">Ferrari SF90 Stradale</div>
+<div class="price">$520,000</div>
+<div class="specs">1000 HP<br/>0-100  2.5s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 4 -->
+<div class="card">
+<img alt="Ferrari Roma" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMl_iWUz40BQWwkfYeL_mKN42Rdpd-jTYl-h9yCMP_he47v3gjx-zXQS5rDhGk79De--3fOG82JSTXxeG1ufLt7Rj5mW-RvnCVGIX4ICBn_qoxo8ceonFLNIR3zXUVBqdWPTVcz65O-wWAiU0I5J7NUI9_GxrPaEzUMtGisDcoY-zRNtEpY-uf1VrNxLKP2ZWstPemSeeOua6QO7nNb2M_8TBXAHC4zxWNRJSH2Bq5haSm8jWF9f6u7UgP86KzNFsLIOZbAfiSaVU"/>
+<div class="card-content">
+<div class="car-name">Ferrari Roma</div>
+<div class="price">$222,000</div>
+<div class="specs">620 HP<br/>0-100  3.4s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 5 -->
+<div class="card">
+<img alt="LaFerrari" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxFH0Jasj_CY_pamCZaPxUwT2VxIgioZjByWju-hlWttHuwpkgLGEF0IRmR8zfcFx0Hb8oHM0Ycy4eyNucxiWwQA-aBvw2zbAsDkQMXQs2SRtCse6IvjgU1_wx1dNgaLhjb1di1LdCdQb8ypwo2dzl25oWm50W0HlhCtKO6nvdPzPONkiA7Xob5SEdaEuNaRkFBgiwx6iIQ7VF9CO7lwuatMl2CCeeS3pFgmR-PU6325G_Ce6D82U8nbCCTMi8Hf6uPGxAfOpWqbo"/>
+<div class="card-content">
+<div class="car-name">LaFerrari</div>
+<div class="price">$1,400,000</div>
+<div class="specs">950 HP<br/>0-100  2.4s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+</main>
+
+</body>
+
+</html>
