@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Porsche - High-End Cars</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.unsplash.com/photo-1740775525864-d8cc2ec1983e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cG9yc2NoZSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+       
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+          .specs {
+            font-size: 0.95rem;
+            color: #fcfcfc;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-style: italic;
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #483a3a;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e30613; 
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<header class="hero">
+<img alt="porche Hero Image" src="https://images7.alphacoders.com/139/1396149.jpg"/>
+<div class="hero-content">
+<h1>Porsche High-End Cars</h1>
+</div>
+</header>
+
+<main class="container">
+<!-- Car 1 -->
+<div class="card">
+<img alt="Porsche 718" src="https://a.storyblok.com/f/322327/1496x1987/3dd1b9d6bd/cm24n3cox0010-718-cayman-s-front.png/m/900x1200/smart/filters:format(avif)?dpl=dpl_84DQ5T7k2cVR1pikEsfobyXKvQmA"/>
+<div class="card-content">
+<div class="car-name">Porsche 718</div>
+<div class="price">$820,000</div>
+<div class="specs">320 HP<br/>0-100  4.9s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 2 -->
+<div class="card">
+<img alt="Porsche cayenne" src="https://a.storyblok.com/f/322327/2586x1449/0c21b5f705/cayenne-coupe.jpg/m/1584x890/smart/filters:format(avif)?dpl=dpl_84DQ5T7k2cVR1pikEsfobyXKvQmA"/>
+<div class="card-content">
+<div class="car-name">Porsche Cayenne</div>
+<div class="price">$965,000</div>
+<div class="specs">353 HP<br/>0-100  5.7s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 3 -->
+<div class="card">
+<img alt="Porsche 911" src="https://prs.porsche.com/iod/image/EG/992812/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHU4UVgBUArlBQtPxyIIrKUMSollT8iAAW+FBIqCBsHAAiAIIAmqHhBJHMMSAK4qx+YC5pbiAAnHUATAAcAIyN+UqFUaCQsIikIAAMAIqhrQDM4wDizeM+HVQALNMACqEAbADSQ6EA7Flboc0AMgASxwBaG6EAwo1jVNOtt6EAkgBqde-uu1Qn0x8GQASidQiMlo8QB8AHIAVhAlHAEACuHoAE8OABRaahLAQAz8HK0TQoRpDRobSxWECEWi4JIIHogGAQeg4XQgABWCloSCoaIwhAUmhsuhgaH4dMsQA?clientId=icc"/>
+<div class="card-content">
+<div class="car-name">Porsche 911</div>
+<div class="price">$1,100,000</div>
+<div class="specs">525 HP<br/>0-100  3.1s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 4 -->
+<div class="card">
+<img alt="Porsche pamamera" src="https://prs.porsche.com/iod/image/EG/YAAAA1/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHk0hOMXlKCUMSollT8iAAW+FBIqCBsHAAiAIIAmnIgisqBzCEgCuKsAK5gLnFuIClJVUkAjOmZAUGgkLCIpCAADACyAEzpHQByAEL9AAod-QAqCek1AOIAHLMAMgDKswMAzBsAorPj+3tUNZN9xwAaZyA9ABLpPQBq21Q9AOoTLwBad1SbQwAs6U2ADEkkCAFKA34AaTmQOWUJAm1WHyRAFVEZsUqj-klniB-jsAGzpf7Aq7-ZYkqj-NFHAnnREAVgWD3STK6YKoTPOAGF0kTgajBeCBQBJfFE8EzKhE6HCgai2UARSuRIASvzZedJukAOxErkgPVJaH6m5GvXQ-F6roATn15yZ6QWYt1VAWk2pIFZcKodqSMpAdvBRrtowd-oeZv9r3dwc+9KSYvSCQWaSoO166R2D1RwK6+cm+OBn1RcxqwPSc0m5YedSoc0+VzFD0jIDF73S0IW6yo0KS3uhyobIGWNYS6uW6RHfpAyvBVzREfSaPO3oeQvSD2WVwe6omlHAEEKznoAE8ODs51gIAZ+ClaJoUD0Oj0iZYrCBCLRcFEEE0IAwBA9A4LoIAAFYKLQSBULgjCBAomg2LoMBoPwP6WEAA?clientId=modelpage"/>
+<div class="card-content">
+<div class="car-name">Porsche Pamamera</div>
+<div class="price">$927,000</div>
+<div class="specs">353 HP<br/>0-100  5.3s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 5 -->
+<div class="card">
+<img alt="Porsche taycan" src="https://prs.porsche.com/iod/image/EG/Y1AAI1/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQFV6AIwwBZNGAYciCKylDEqJZU-IgAFvhQSKggbBwAIgCCAJrBoQThzFEgCuKsAK5gLiluIFkAjBkZAJJ1uUr5EaCQsIikIAAMAHIAQsH9ACpj42nBdQAyAMqzgwDMyxmzAAr9WwCis+MATLMAGsdUhwDCAKzBhwBSoxcAamsXAOoAnHcAWk8gK2GABZgisAGIAcVB9xBVBWAGkoXC5rCAQBFSZwhaooEAdiawSBGTeICBYPOpPcYMJJxJ1xOl2CADYwTsqCykSAmRCNuymiSmfcZuz4WyuYN7syAEqM9knZ7BXFMgASioy8MVyt5IFx8JJuN83youPcnNxZ2CAA4mpiQJbxkyrc9OZ9rtrPkz+vsqJ97u7fCTPptA88NT73rbPj9vSAMpbZbHtbt+knfBTds8xWCfmKIXUTsEIb5URDnq0qBCc8Ems8jSAmu8xfdPjH4ZallR4RkKfDhiT4crblQ5hDplK5sFfHVJVQ0XVOWj7kOQGi58F3Js6+40bjgs9WXu5hTnlKxc93rdKOAIGVnPQAJ4cXacrAQAz8LK0TQoQ79Q5MywrBAQhaFwBIEE6EAYAgegcF0EAACsFFoJAqFwRhwgUTQbF0GA0H4EDLCAA?clientId=modelpage"/>
+<div class="card-content">
+<div class="car-name">Porsche Taycan (Electric)</div>
+<div class="price">$790,000</div>
+<div class="specs">408 HP<br/>0-100  4.4s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+</main>
+
+</body>
+
+</html>
