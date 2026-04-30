@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>ROLLS ROYCE - High-End Cars</title>
+
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(RRback.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color:#ffffff;
+            
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+          .specs {
+            font-size: 0.95rem;
+            color: #fcfcfc;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-style: italic;
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Grid Section */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #1d1919;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #000000;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: red;
+            color: #fdfbfb;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<header class="hero">
+<img alt="Rolls-Royce Hero Image" src="RRtopjpg.jpg"/>
+<div class="hero-content">
+<h1>Rolls-Royce High-End Cars</h1>
+</div>
+</header>
+
+<main class="container">
+<!-- Car 1 -->
+<div class="card">
+<img alt="Rolls-Royce Ghost" src="https://blackfoxmotors.de/wp-content/uploads/2024/10/394A0483-1410x940.jpeg"/>
+<div class="card-content">
+<div class="car-name">Rolls-Royce Ghost</div>
+<div class="price">$342,000</div>
+<div class="specs">563 HP<br/>0-100  4.8s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 2 -->
+<div class="card">
+<img alt="Rolls-Royce Cullinan" src="https://i.ytimg.com/vi/rHcMVZrXRfE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBFelVkkm0IcB2TqjY9KC5VlMZPUg"/>
+<div class="card-content">
+<div class="car-name">Rolls-Royce Cullinan</div>
+<div class="price">$345,000</div>
+<div class="specs">563 HP<br/>0-100  5.0s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 3 -->
+<div class="card">
+<img alt="Rolls-Royce Spectre" src="https://pictures.dealer.com/b/bramanrollsroyce/1234/7708cc9c2cd246bfb648962798ff4f28.jpg"/>
+<div class="card-content">
+<div class="car-name">Rolls-Royce Spectre</div>
+<div class="price">$420,000</div>
+<div class="specs">577 HP<br/>0-100  4.5s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 4 -->
+<div class="card">
+<img alt="Rolls-Royce Wraith" src="https://hamann-motorsport.com/wp-content/uploads/2022/04/hamann-slider-01-rolls-royce.jpg"/>
+<div class="card-content">
+<div class="car-name">Rolls-Royce Wraith</div>
+<div class="price">$330,000</div>
+<div class="specs">624 HP<br/>0-100  4.4s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+<!-- Car 5 -->
+<div class="card">
+<img alt="Rolls-Royce Phantom" src="https://hips.hearstapps.com/hmg-prod/images/2026-rolls-royce-phantom-pr-123-690cd211484fb.jpg?crop=0.463xw:0.411xh;0.149xw,0.416xh&resize=640:*"/>
+<div class="card-content">
+<div class="car-name">Rolls-Royce Phantom</div>
+<div class="price">$460,000</div>
+<div class="specs">563 HP<br/>0-100  5.1s</div>
+<a class="btn" href="#">Buy Now</a>
+</div>
+</div>
+
+</main>
+
+</body>
+
+</html>
