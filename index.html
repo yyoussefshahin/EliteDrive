@@ -7,6 +7,9 @@
     
 </head>
 <body>
+<h2 id="welcome"></h2>
+
+
 
 <header>
     <h1>EliteDrive</h1>
@@ -115,5 +118,13 @@
 
 <script src="script.js"></script>
 <script src="search.js"></script>
+<script>
+    const email = localStorage.getItem("userEmail");
+
+    if (email) {
+        document.getElementById("welcome").innerText =
+            "Welcome " + email + " 👋";
+    }
+</script>
 </body>
 </html>

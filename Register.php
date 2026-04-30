@@ -1,5 +1,5 @@
 <?php
-
+include 'db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $fullname = $_POST["fullname"];
@@ -7,11 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     $confirm_password = $_POST["confirm_password"];
 
-    
     if ($password != $confirm_password) {
         echo "Passwords do not match!";
     } else {
-        echo "Registration successful! Welcome " . $fullname;
+
+        header("Location: login.html?name=" . urlencode($fullname));
+        exit();
     }
 
 } else {
