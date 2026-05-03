@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $fullname = $_POST["fullname"];
@@ -7,16 +8,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     $confirm_password = $_POST["confirm_password"];
 
-    if ($password != $confirm_password) {
-        echo "Passwords do not match!";
-    } else {
-
-        header("Location: login.html?name=" . urlencode($fullname));
+    // Check if passwords match
+    if ($password !== $confirm_password) {
+        echo " Passwords do not match!";
         exit();
     }
 
-} else {
-    echo "Invalid request!";
-}
+    // Hash password AFTER checking
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
+    $sql = "INSERT INTO users (fullname, email, password)
+            VALUES ('$fullname', '$email', '$hashed_password')";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: login.html");
+        exit();
+    } else {
+        echo "Error: " . $conn->error;
+    }
+}
 ?>

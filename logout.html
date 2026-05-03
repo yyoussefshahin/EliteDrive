@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logging Out</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color: white;
+            font-family: Arial;
+        }
+
+        .box {
+            text-align: center;
+            padding: 30px;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Logging you out...</h1>
+    <p>Please wait</p>
+</div>
+
+<script>
+    setTimeout(() => {
+        window.location.href = "logout.php";
+    }, 1500);
+</script>
+
+</body>
+</html>

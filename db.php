@@ -1,10 +1,5 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "elitedrive";
-
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli("localhost", "root", "", "elitedrive1");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
